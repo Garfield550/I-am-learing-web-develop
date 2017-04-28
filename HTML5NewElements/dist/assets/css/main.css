@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  background-color: #FAFAFA; }
+
+main {
+  margin: 0 auto;
+  width: 1000px;
+  background-color: white; }
+
+.main-header {
+  height: 150px;
+  background-image: url(/assets/img/banner.jpg); }
+  .main-header a {
+    top: 28px;
+    left: 70px;
+    height: 77px;
+    display: block;
+    position: relative;
+    background: no-repeat;
+    background-image: url(/assets/img/logo.png); }
+
+.navbar {
+  background: linear-gradient(#088FE1, #0276B4); }
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center; }
+    .navbar ul li {
+      display: inline-block; }
+      .navbar ul li::after {
+        content: " | ";
+        color: #90D2F2; }
+      .navbar ul li:nth-last-child(-n+1)::after {
+        content: ""; }
+      .navbar ul li a {
+        text-decoration: none;
+        text-align: center;
+        line-height: 38px;
+        height: 100%;
+        color: white;
+        padding: 0 10px;
+        display: inline-block; }
+        .navbar ul li a:hover {
+          background: linear-gradient(#16E6F5, #0276B4); }
+
+.main-time {
+  margin: 6px; }
+
+.article-line {
+  border-top: solid 4px #2F88ED; }
+
+article .article-nav {
+  margin: 6px;
+  font-size: 12px; }
+  article .article-nav ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline; }
+    article .article-nav ol li {
+      display: inline-block; }
+      article .article-nav ol li::after {
+        content: " >> "; }
+      article .article-nav ol li:nth-last-child(-n+1)::after {
+        content: ""; }
+      article .article-nav ol li a {
+        color: #444444;
+        text-decoration: none; }
+
+article section {
+  margin: 0 30px;
+  text-indent: 28px; }
+  article section header {
+    text-align: center; }
+    article section header h1 {
+      font-size: 22px; }
+  article section figure {
+    text-align: center; }
+
+footer {
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  background-color: #146CCF; }
