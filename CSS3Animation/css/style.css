@@ -1,0 +1,20 @@
+.div-box {
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-color: #010101;
+    animation: box 1.5s infinite;
+}
+@keyframes box {
+    0%      {background-color: #615243; border-radius: 0px;}
+    10%     {background-color: #524334; border-radius: 20px;}
+    20%     {background-color: #433425; border-radius: 40px;}
+    30%     {background-color: #342516; border-radius: 60px;}
+    40%     {background-color: #251607; border-radius: 80px;}
+    50%     {background-color: #160700; border-radius: 100px;}
+    60%     {background-color: #251607; border-radius: 80px;}
+    70%     {background-color: #342516; border-radius: 60px;}
+    80%     {background-color: #433425; border-radius: 40px;}
+    90%     {background-color: #524334; border-radius: 20px;}
+    100%    {background-color: #615243; border-radius: 0px;}
+}
