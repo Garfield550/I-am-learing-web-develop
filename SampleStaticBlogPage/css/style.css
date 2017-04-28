@@ -1,0 +1,107 @@
+body {
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.clearfix::after, .clearfix::before {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+a {
+    color: #0B5AA3;
+    text-decoration: none;
+}
+
+.main {
+    width: 80%;
+}
+
+.header {
+    text-align: center;
+}
+
+.article {
+    float: left;
+    width: 80%;
+}
+
+.categories {
+    float: right;
+}
+
+.categories ul {
+    color: #0B5AA3;
+}
+
+.title {
+    display: inline-block;
+}
+
+.title .number {
+    display: inherit;
+    margin-right: 30px;
+}
+
+.title h3, .operate .count, .operate .count > *, .operate .share {
+    display: inherit;
+}
+
+.content {
+    text-indent: 2rem;
+}
+
+.operate {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.operate .count {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.operate .share {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.pages {
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.pages ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pages ol, .pages ol li {
+    display: inline-block;
+}
+
+.pages ol li a {
+    color: #000;
+    border: solid 1px #000;
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inherit;
+}
+
+.pages ol li:nth-child(0n+2) a {
+    border: solid 1px #0B5AA3;
+    color: #0B5AA3;
+}
+
+.footer {
+    text-align: center;
+}
