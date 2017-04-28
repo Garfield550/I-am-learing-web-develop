@@ -46,7 +46,7 @@ main {
                 content:                " | ";
                 color:                  #90D2F2;
             }
-            &:nth-last-child(-n+1)::after {
+            &:last-child::after {
                 content:                "";
             }
             a {
@@ -85,7 +85,7 @@ article {
                 &::after {
                     content:            " >> ";
                 }
-                &:nth-last-child(-n+1)::after {
+                &:last-child::after {
                     content:            "";
                 }
                 a {
