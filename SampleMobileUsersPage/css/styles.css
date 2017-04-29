@@ -1,0 +1,265 @@
+.clearfix::after, .clearfix::before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    background-color: #F7F7F7;
+}
+
+.main-nav {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+    border-bottom: solid 2px #F2F2F2;
+}
+
+.main-nav .back a {
+    background-image: url(../img/back.svg);
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.main-nav .user a {
+    background-image: url(../img/user.svg);
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    background-color: #FF6633;
+    height: 20vh;
+    border-bottom: solid 2px #6B2A15;
+}
+
+.user-info .user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user-info .user .head {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    border-radius: 50px;
+    background-image: url(../img/user-icon.jpg);
+    background-size: contain;
+}
+
+.user-info .user .username {
+    margin-left: 10px;
+    color: white;
+}
+
+.user-info .messages {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.user-info .messages .message {
+    position: absolute;
+    float: right;
+    margin-top: 20px;
+    right: 20px;
+}
+
+.user-info .messages .message a {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/message.svg);
+    background-size: 30px;
+    display: block;
+}
+
+.user-info .messages .balance {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: white;
+    align-self: flex-end;
+}
+
+.order {
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.order p {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.order ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.order .order-icon {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.order .order-icon a {
+    color: #000;
+    font-size: .8rem;
+    text-decoration: none;
+}
+
+.order-icon [class*="icon-"] {
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    /*margin-bottom: 5px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-icon .icon-group {
+    background-image: url(../img/group.svg);
+}
+
+.order-icon .icon-pay {
+    background-image: url(../img/pay.svg);
+}
+
+.order-icon .icon-send {
+    background-image: url(../img/send.svg);
+}
+
+.order-icon .icon-receive {
+    background-image: url(../img/receive.svg);
+}
+
+.order-icon .icon-commit {
+    background-image: url(../img/commit.svg);
+}
+
+.order-icon .icon-aftsale {
+    background-image: url(../img/after-sale.svg);
+}
+
+.menus {
+    overflow: auto;
+}
+
+.menus ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menus .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: solid 1px #F4F4F4;
+}
+
+.menus .menu > span {
+    margin-right: 20px;
+}
+
+.menus ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.menus .menu [class*="icon-"] {
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    margin: 10px 10px;
+}
+
+.menu .icon-list {
+    background-image: url(../img/list.svg);
+}
+
+.menu .icon-sale {
+    background-image: url(../img/sale.svg);
+}
+
+.menu .icon-address {
+    background-image: url(../img/address.svg);
+}
+
+.menu .icon-setting {
+    background-image: url(../img/setting.svg);
+}
+
+.menu .icon-help {
+    background-image: url(../img/help.svg);
+}
+
+.footer {
+    text-align: center;
+    background-color: #FAFAFA;
+    padding: 5px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 0 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer ul li [class*="icon-"] {
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+}
+
+.footer .icon-home {
+    background-image: url(../img/home.svg);
+}
+
+.footer .icon-support {
+    background-image: url(../img/support.svg);
+}
+
+.footer .icon-me {
+    background-image: url(../img/me.svg);
+}
+
+.active {
+    color: #FF6633 !important;
+}
