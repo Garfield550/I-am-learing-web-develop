@@ -1,0 +1,58 @@
+@mixin make-container() {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin make-row() {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin make-gutters($gutter: $grid-gutter-width-base) {
+    padding-right: ($gutter / 2);
+    padding-left:  ($gutter / 2);
+}
+
+@mixin make-col($size, $columns: $grid-columns) {
+    // 计算每个列的百分比大小
+    width: percentage($size / $columns);
+}
+
+@mixin make-grid-columns($columns: $grid-columns) {
+    // 占位符
+    %grid-column {
+        position: relative;
+        width: 100%;
+        min-height: 1px; // 防止崩溃
+    }
+
+    // 默认的列会自动占满剩余宽度
+    .col {
+        flex-basis: 0; // 设置盒子初始大小
+        flex-grow: 1; // 设置盒子大小的倍数
+        max-width: 100%;
+    }
+
+    .col-auto {
+        flex: 0 0 auto;
+        width: auto; // 盒子宽度自动, 不再是 100%
+    }
+
+    .col, .col-auto {
+        @extend %grid-column;
+    }
+
+    // 12个列
+    @for $i from 1 through $columns {
+        .col-#{$i} {
+            @extend %grid-column;
+        }
+    }
+
+    // 12个列中每个列的百分比
+    @for $i from 1 through $columns {
+        .col-#{$i} {
+            @include make-col($i, $columns);
+        }
+    }
+}
