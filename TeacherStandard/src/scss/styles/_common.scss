@@ -15,3 +15,65 @@ body {
     width:                                  1000px;
     @include make-center();
 }
+
+.header {
+    height:                                 140px;
+    width:                                  100%;
+    margin-bottom:                          10px;
+    .logo {
+        width:                              250px;
+        height:                             100%;
+        background-image:                   url(../img/logo.png);
+        background-repeat:                  no-repeat;
+        margin-top:                         20px;
+        margin-left:                        20px;
+        float:                              left;
+    }
+    .banner {
+        width:                              584px;
+        height:                             100%;
+        background-image:                   url(../img/banner.png);
+        background-repeat:                  no-repeat;
+        float:                              right;
+    }
+}
+
+.article {
+    margin-bottom:                          10px;
+    padding-left:                           30px;
+    padding-right:                          30px;
+    padding-bottom:                         30px;
+    box-sizing:                             border-box;
+    width:                                  100%;
+    background:                             #FFF;
+    background:
+        linear-gradient(-45deg,transparent 50%, #08B3C5 0) no-repeat 100% 100% / 2rem 2rem, 
+        linear-gradient(-45deg, transparent 1.41421356rem, #FFF 0);
+    &::before {
+        position:                           relative;
+        top:                                -15px;
+        height:                             44px;
+        width:                              14px;
+        display: block;
+        background-image:                   url(../img/dot.png);
+    }
+}
+
+.footer {
+    text-align:                             center;
+    font-size:                              12px;
+    margin-top:                             30px;
+    margin-bottom:                          30px;
+    div {
+        display:                            inline-block;
+        p {
+            display:                        inherit;
+            margin-top:                     0;
+            margin-bottom:                  0;
+            margin-right:                   28px;
+        }
+        p:nth-last-child(-n+1) {
+            margin-right:                   0; 
+        }
+    }
+}
