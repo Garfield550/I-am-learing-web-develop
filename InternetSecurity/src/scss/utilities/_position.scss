@@ -1,0 +1,23 @@
+// Positioning
+%fixed {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: $zindex-fixed;
+}
+
+.fixed-top {
+    top: 0;
+    @extend %fixed;
+}
+
+.fixed-bottom {
+    bottom: 0;
+    @extend %fixed;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: $zindex-sticky;
+}
