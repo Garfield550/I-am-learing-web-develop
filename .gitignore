@@ -27,3 +27,7 @@ dist
 # Dependency directory
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
+
+# Customize
+InternetSecurity/src/scss/imports/_bs*.scss
+InternetSecurity/src/scss/mixins/_bs*.scss
