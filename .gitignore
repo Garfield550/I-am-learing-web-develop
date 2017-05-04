@@ -29,5 +29,4 @@ dist
 node_modules
 
 # Customize
-InternetSecurity/src/scss/imports/_bs*.scss
-InternetSecurity/src/scss/mixins/_bs*.scss
+InternetSecurity/src/scss/**/_bs*.scss
