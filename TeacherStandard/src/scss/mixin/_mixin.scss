@@ -1,0 +1,15 @@
+@mixin make-flex($type: $flex-type) {
+    display:                                flex;
+
+    @if $type == row {
+        flex-direction:                     row;
+    } @else if $type == col {
+        flex-direction:                     column;
+    }
+    
+}
+
+@mixin make-center() {
+    margin-left:                            auto;
+    margin-right:                           auto;
+}

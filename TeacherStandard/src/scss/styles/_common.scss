@@ -1,0 +1,17 @@
+body {
+    margin:                                 0;
+    background-image:                       url(../img/bj.png);
+}
+
+.clearfix {
+    &::after, &::before {
+        clear:                              both;
+        display:                            block;
+        content:                            "";
+    }
+}
+
+.container {
+    width:                                  1000px;
+    @include make-center();
+}

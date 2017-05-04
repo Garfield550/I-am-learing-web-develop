@@ -1,0 +1,110 @@
+.header {
+    height:                                 140px;
+    width:                                  100%;
+    margin-bottom:                          10px;
+    .logo {
+        width:                              250px;
+        height:                             100%;
+        background-image:                   url(../img/logo.png);
+        background-repeat:                  no-repeat;
+        margin-top:                         20px;
+        margin-left:                        20px;
+        float:                              left;
+    }
+    .title {
+        position:                           relative;
+        top:                                60px;
+        width:                              228px;
+        height:                             54px;
+        background-image:                   url(../img/index_title.png);
+        background-repeat:                  no-repeat;
+        @include make-center();
+    }
+    .banner {
+        width:                              584px;
+        height:                             100%;
+        background-image:                   url(../img/banner.png);
+        background-repeat:                  no-repeat;
+        float:                              right;
+    }
+}
+
+.article {
+    margin-bottom:                          10px;
+    padding-left:                           30px;
+    padding-right:                          30px;
+    padding-bottom:                         30px;
+    box-sizing:                             border-box;
+    width:                                  100%;
+    background:                             #FFF;
+    background:
+        linear-gradient(-45deg,transparent 50%, #08B3C5 0) no-repeat 100% 100% / 2rem 2rem, 
+        linear-gradient(-45deg, transparent 1.41421356rem, #FFF 0);
+    &::before {
+        position:                           relative;
+        top:                                -15px;
+        height:                             44px;
+        width:                              14px;
+        background-image:                   url(../img/dot.png);
+    }
+    h1, h2 {
+        color:                              red;
+        text-align:                         center;
+        font-weight:                        normal;
+        font-size:                          18px;
+    }
+    p {
+        font-size:                          14px;
+        text-indent:                        28px;
+    }
+    .no-indent {
+        text-indent:                        0;
+    }
+    .copyright {
+        float:                              right;
+        text-align:                         center;
+    }
+}
+
+.figures {
+    @include make-center();
+    box-sizing:                             border-box;
+    padding:                                20px;
+    background-color:                       #FFF;
+    .photos {
+        @include make-flex(row);
+        flex-wrap:                          wrap;
+        justify-content:                    space-around;
+        a {
+            @include make-flex(col);
+            text-align:                     center;
+            color:                          red;
+            text-decoration:                none;
+            margin-bottom:                  10px;
+            img {
+                box-sizing:                 border-box;
+                border:                     solid 1px #CCCCCC;
+                padding:                    10px;
+                margin-bottom:              8px;
+            }
+        }
+    }
+}
+
+.footer {
+    text-align:                             center;
+    font-size:                              12px;
+    margin-top:                             30px;
+    margin-bottom:                          30px;
+    div {
+        display:                            inline-block;
+        p {
+            display:                        inherit;
+            margin:                         0;
+            margin-right:                   28px;
+        }
+        p:nth-last-child(-n+1) {
+            margin-right:                   0; 
+        }
+    }
+}
