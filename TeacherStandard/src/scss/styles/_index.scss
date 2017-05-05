@@ -42,15 +42,21 @@
         a {
             @include make-flex(col);
             text-align:                     center;
-            color:                          red;
             text-decoration:                none;
             margin-bottom:                  10px;
+            color:                          black;
             img {
                 box-sizing:                 border-box;
                 border:                     solid 1px #CCCCCC;
                 padding:                    10px;
                 margin-bottom:              8px;
             }
+            img:hover {
+                border-color:               red;
+            }
+        }
+        a:hover {
+            color:                          red;
         }
     }
 }
