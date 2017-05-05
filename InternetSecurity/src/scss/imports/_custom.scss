@@ -3,6 +3,41 @@ body {
     font-family:            "Microsoft YaHei", Arial, Helvetica, sans-serif;
 }
 
+.page-title {
+    background-image:       url(../img/title_logo.png);
+    width:                  723px;
+    height:                 422px;
+    background-repeat:      no-repeat;
+}
+
+.sdcit-logo {
+    width:                  373px;
+    height:                 60px;
+    background-repeat:      no-repeat;
+    background-image:       url(../img/sdcit_logo.png);
+}
+
+.xdd {
+    width:                  198px;
+    height:                 423px;
+    background-repeat:      no-repeat;
+    background-image:       url(../img/xjp.png);
+}
+
+.title-line {
+    display:                inline-block;
+    .left-line, .right-line {
+        border-top:         solid 2px white;
+        width:              300px;
+    }
+    .left-line {
+        margin-right:       30px;
+    }
+    .right-line {
+        margin-left:        30px;
+    }
+}
+
 .section {
     box-sizing:             border-box;
     overflow:               hidden;
@@ -131,7 +166,6 @@ body {
 
     & > h2 {
         margin-top:         0;
-        // font-weight:        normal;
     }
 
     .no-margin {
@@ -188,4 +222,10 @@ body {
     color:                  #FFF;
     padding:                0;
     text-align:             center;
+}
+
+@media (max-width: 1000px) {
+    section, footer {
+        display:            none;
+    }
 }
