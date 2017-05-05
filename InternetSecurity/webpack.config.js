@@ -11,7 +11,7 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist/assets'),
-        publicPath: 'assets',
+        publicPath: '/assets/',
     },
     module: {
         rules: [
@@ -26,6 +26,14 @@ module.exports = {
                     fallback: 'style-loader',
                     use: ['css-loader', 'sass-loader'],
                 })
+            },
+            {
+                test: /(\.jpg|\.png|\.gif|\.webp)$/,
+                loader: 'url-loader',
+                options: {
+                    limit: 100000,
+                    name: '[hash:8].[name].[ext]'
+                }      
             }
         ]
     },
@@ -37,14 +45,14 @@ module.exports = {
     },
     plugins: [
         new Webpack.HotModuleReplacementPlugin(),
-        new Webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery',
-            'root.jQuery': 'jquery',
-            Tether: 'tether',
-            tether: 'tether',
-        }),
+        // new Webpack.ProvidePlugin({
+        //     $: 'jquery',
+        //     jQuery: 'jquery',
+        //     'window.jQuery': 'jquery',
+        //     'root.jQuery': 'jquery',
+        //     Tether: 'tether',
+        //     tether: 'tether',
+        // }),
         // new CommonsChunkPlugin({
         //     name: 'vendors',
         //     // filename: 'vendors.js',
@@ -58,7 +66,7 @@ module.exports = {
     ],
     devtool: '#cheap-module-eval-source-map',
     devServer: {
-        contentBase: 'dist',
+        contentBase: 'src',
         watchContentBase: true,
         compress: true,
         port: 9000,
