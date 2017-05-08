@@ -228,4 +228,17 @@ body {
     section, footer {
         display:            none;
     }
+    div {
+        .unsupdisp {
+            height:         100vh;
+        }
+    }
+}
+
+@media (min-width: 1001px) {
+    div {
+        .unsupdisp {
+            display:        none;
+        }
+    }
 }
