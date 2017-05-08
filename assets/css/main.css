@@ -319,13 +319,13 @@ body {
   padding: 0;
   text-align: center; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1023px) {
   section, footer {
     display: none; }
   div .unsupdisp {
     height: 100vh; } }
 
-@media (min-width: 1001px) {
+@media (min-width: 1024px) {
   div .unsupdisp {
     display: none; } }
 
