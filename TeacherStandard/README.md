@@ -1,9 +1,9 @@
-About "TeacherStandard" project
+项目2：师德标兵
 ===
 
-The project is my homework "TeacherStandard".
+这是我的作业"项目2：师德标兵"的源代码.
 
-How to run
+运行
 ---
 
 You need use Node.js and Yarn.
