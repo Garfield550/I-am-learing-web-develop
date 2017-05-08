@@ -180,7 +180,7 @@ body {
   display: inline-block; }
   .title-line .left-line, .title-line .right-line {
     border-top: solid 2px white;
-    width: 300px; }
+    width: 20vw; }
   .title-line .left-line {
     margin-right: 30px; }
   .title-line .right-line {
