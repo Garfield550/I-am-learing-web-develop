@@ -1,5 +1,7 @@
 # 项目1：网络安全周
 
+访问 [ise.550.moe][ise] 查看该项目效果.
+
 网络安全周项目, 与其他同学作业不同的地方是:
 
 1. 我使用 Webpack .
@@ -22,4 +24,5 @@ yarn install
 npm run dev
 ```
 
+[ise]:https://ise.550.moe/
 [titlepic]:./src/img/title_logo.png
