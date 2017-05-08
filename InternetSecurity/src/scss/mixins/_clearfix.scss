@@ -1,9 +1,0 @@
-// MDN 上的 clearfix 代码
-
-@mixin clearfix() {
-    &::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-}
