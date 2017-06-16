@@ -2,7 +2,7 @@
   <div id="app">
     <gt-header></gt-header>
     <gt-banner></gt-banner>
-    <router-view class="router-view"></router-view>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -25,11 +25,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-}
-
-.router-view {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
 }
 </style>

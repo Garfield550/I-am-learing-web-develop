@@ -1,6 +1,6 @@
 <template lang="pug">
-  .wapper
-    .banner
+  .banner
+    .wapper
       .slogan
         p.t1 {{ slogan1 }}
         h1 {{ slogan2 }}
@@ -23,56 +23,58 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-  .wapper {
+<style lang="scss">
+  .banner {
     width: 100%;
     background: linear-gradient(135deg, #182975, #9D1BB2);
-  }
 
-  .banner {
-    width: 90%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    > .wapper {
+      width: 90%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
 
-    > .slogan {
-      color: #FFF;
-      padding-top: 40px;
-      padding-bottom: 40px;
+      > .slogan {
+        color: #FFF;
+        padding-top: 40px;
+        padding-bottom: 40px;
 
-      h1 {
-        font-size: 60px;
+        h1 {
+          font-size: 60px;
+        }
+        .t1, .t2, .t3 {
+          font-family: 'Avenir', Helvetica, Arial, "YouYuan", sans-serif;
+        }
+
+        .t2 {
+          padding-left: 40px;
+          font-size: 24px;
+        }
       }
-      .t1, .t2, .t3 {
-        font-family: 'Avenir', Helvetica, Arial, "YouYuan", sans-serif;
-      }
 
-      .t2 {
-        padding-left: 40px;
-        font-size: 24px;
+      > .monitors {
+        background-image: url(../assets/monitors.png);
+        background-repeat: no-repeat;
+        width: 581px;
+        height: 272px;
       }
-    }
-
-    > .monitors {
-      background-image: url(../assets/monitors.png);
-      background-repeat: no-repeat;
-      width: 581px;
-      height: 272px;
     }
   }
 
   @media screen and (min-width: 1000px) and (max-width: 1366px - 1) {
     .banner {
-      > .slogan {
-        h1 {
-          font-size: 36px;
-        }
+      > .wapper {
+        > .slogan {
+          h1 {
+            font-size: 36px;
+          }
 
-        .t2 {
-          font-size: 20px;
+          .t2 {
+            font-size: 20px;
+          }
         }
       }
     }

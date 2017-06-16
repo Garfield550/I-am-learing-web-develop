@@ -24,7 +24,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $fonts-color: #182975 !default;
 
 .header {
@@ -37,7 +37,7 @@ $fonts-color: #182975 !default;
   flex-flow: row nowrap;
   justify-content: space-between;
 
-  .logo {
+  > .logo {
     background-image: url(../assets/logo.png);
     background-repeat: no-repeat;
     width: 256px;
