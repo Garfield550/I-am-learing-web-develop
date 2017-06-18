@@ -42,10 +42,10 @@
         .newslist
           ul.leftnews
             li(v-for="news in leftNews")
-              router-link(to="#") {{ news.news }}
+              router-link(to="/content") {{ news.news }}
           ul.rightnews
             li(v-for="news in rightNews")
-              router-link(to="#") {{ news.news }}
+              router-link(to="/content") {{ news.news }}
       .rightlist
         a.listitem(href="#" v-for="listItem in rightLists")
           .number {{ listItem.id }}
