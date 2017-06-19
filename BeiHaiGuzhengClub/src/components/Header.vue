@@ -32,7 +32,7 @@ export default {
     width: 100%;
     
     .bh-header-wapper {
-      width: 1000px;
+      width: 960px;
       margin-left: auto;
       margin-right: auto;
       margin-top: 20px;
@@ -66,7 +66,7 @@ export default {
         }
 
         ul li:last-child {
-          margin-right: 0;
+          margin-right: 20px;
         }
 
         ul li .bh-header-navlink {
