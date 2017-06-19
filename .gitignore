@@ -30,3 +30,7 @@ node_modules
 
 # Customize
 InternetSecurity/src/scss/**/_bs*.scss
+
+# Lock files
+yarn.lock
+package-lock.json
