@@ -29,7 +29,7 @@ export default {
     background: linear-gradient(135deg, #182975, #9D1BB2);
 
     > .wapper {
-      width: 90%;
+      width: 1200px;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;

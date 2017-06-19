@@ -95,7 +95,7 @@ $indexpadding: 60px !default;
 
   .index {
     > .boardBar {
-      width: 90%;
+      width: 1200px;
       margin-left: auto;
       margin-right: auto;
       padding: $indexpadding 0;
@@ -235,10 +235,8 @@ $indexpadding: 60px !default;
       margin-right: auto;
 
       .leftlist {
-        width: 50%;
+        width: 600px;
         float: left;
-        padding-right: 20px;
-        box-sizing: border-box;
 
         .pic {
           background-image: url(../assets/peoples.png);
@@ -303,9 +301,9 @@ $indexpadding: 60px !default;
       }
 
       .rightlist {
-        width: 50%;
+        width: 600px;
         float: right;
-        padding-left: 20px;
+        padding-left: 40px;
         box-sizing: border-box;
 
         .listitem {

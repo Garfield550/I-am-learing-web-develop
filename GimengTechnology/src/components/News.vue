@@ -54,7 +54,7 @@ export default {
 
 <style lang="scss">
   .news {
-    width: 90%;
+    width: 1200px;
     margin: 40px auto;
 
     > .row1 {

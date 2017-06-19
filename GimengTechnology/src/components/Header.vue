@@ -28,7 +28,7 @@ export default {
 $fonts-color: #182975 !default;
 
 .header {
-  width: 90%;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
