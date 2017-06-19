@@ -1,7 +1,7 @@
 <template lang="pug">
   .bh-header
     .bh-header-wapper
-      .bh-header-logo
+      router-link.bh-header-logo(to="/")
       nav.bh-header-nav
         ul
           li(v-for="nav in bhHeaderNav")
