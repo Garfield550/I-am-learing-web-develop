@@ -49,7 +49,7 @@ export default {
         background-repeat: no-repeat;
         width: 37px;
         height: 123px;
-        margin-left: 40px;
+        margin-left: 20px;
       }
 
       .bh-header-nav {
