@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import bhIndex from '@/components/Index';
 import bhContact from '@/components/Contact';
 import bhIntro from '@/components/Intro';
+import bhIntro2 from '@/components/Intro2';
 
 Vue.use(Router);
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/intro',
       name: 'Intro',
       component: bhIntro,
+    },
+    {
+      path: '/intro2',
+      name: 'Intro2',
+      component: bhIntro2,
     },
   ],
 });
