@@ -16,7 +16,7 @@ export default {
     return {
       bhHeaderNav: [
         { name: '首页', link: '/' },
-        { name: '琴社介绍', link: '#' },
+        { name: '琴社介绍', link: '/intro' },
         { name: '古琴研习', link: '#' },
         { name: '古琴欣赏', link: '#' },
         { name: '琴社活动', link: '#' },
