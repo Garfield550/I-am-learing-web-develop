@@ -68,7 +68,9 @@ export default {
 
     .bh-purchase-main {
       width: 840px;
-      margin: 40px auto;
+      margin: 0 auto;
+      padding: 40px 0;
+      border-bottom: 1px solid #dddddd;
 
       .bh-main-title {
         font-size: 20px;
@@ -78,6 +80,7 @@ export default {
       .bh-main-content {
         padding: 0 40px;
         font-size: 14px;
+        margin-top: 40px;
       }
 
       .bh-main-content p {
