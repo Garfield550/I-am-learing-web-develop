@@ -19,7 +19,7 @@ export default {
         { name: '琴社介绍', link: '/intro' },
         { name: '古琴研习', link: '#' },
         { name: '古琴欣赏', link: '/purchase' },
-        { name: '琴社活动', link: '#' },
+        { name: '琴社活动', link: '/event' },
         { name: '联系我们', link: '/contact' },
       ],
     };
