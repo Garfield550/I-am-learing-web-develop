@@ -41,12 +41,14 @@
             |  师从于张子盛先生，为其入室弟子。在继承学习九嶷琴派演奏特点的基础上，同时研修诸城琴曲。演奏风格沉稳内敛，运指华美自如，内透诸城风骨，善弹《秋鸿》、《捣衣》等传统大曲，亦精于《三峡船歌》《胜利操》等当代新作。
       .bh-index-guzheng
         p.bh-guzheng-text 古琴欣赏
-        swipe.bh-guzheng-swipe
-          swipe-item.bh-swipe-1
-          swipe-item.bh-swipe-2
-          swipe-item.bh-swipe-3
-          swipe-item.bh-swipe-4
-          swipe-item.bh-swipe-5
+        swiper.bh-guzheng-swipe(:options="swiperOption")
+          swiper-slide.bh-swipe-1
+          swiper-slide.bh-swipe-2
+          swiper-slide.bh-swipe-3
+          swiper-slide.bh-swipe-4
+          swiper-slide.bh-swipe-5
+          .swiper-button-prev(slot="button-prev")
+          .swiper-button-next(slot="button-next")
     .bh-index-footer
       hr
       .bh-footer-content
@@ -64,13 +66,25 @@
 </template>
 
 <script>
-import { Swipe, SwipeItem } from 'vue-swipe';
+import { swiper, swiperSlide } from 'vue-awesome-swiper';
 
 export default {
   name: 'bhIndex',
+  data() {
+    return {
+      swiperOption: {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        spaceBetween: 30,
+        grabCursor: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+      },
+    };
+  },
   components: {
-    Swipe,
-    SwipeItem,
+    swiper,
+    swiperSlide,
   },
 };
 </script>
@@ -247,10 +261,12 @@ export default {
         background-color: #cccccc;
       }
 
-      .bh-guzheng-swipe div {
+      .bh-guzheng-swipe .swiper-slide {
         display: flex;
         flex-flow: row nowrap;
         overflow: hidden;
+        width: 166px;
+        height: 250px;
       }
 
       .bh-guzheng-swipe *[class*="bh-swipe"] {
