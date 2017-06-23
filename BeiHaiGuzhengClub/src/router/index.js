@@ -7,6 +7,7 @@ import bhIntro2 from '@/components/Intro2';
 import bhPurchase from '@/components/Purchase';
 import bhEvent from '@/components/Event';
 import bhLesson from '@/components/Lesson';
+import bhTutor from '@/components/Tutor';
 
 Vue.use(Router);
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/lesson',
       name: 'Lesson',
       component: bhLesson,
+    },
+    {
+      path: '/tutor',
+      name: 'Tutor',
+      component: bhTutor,
     },
   ],
 });
