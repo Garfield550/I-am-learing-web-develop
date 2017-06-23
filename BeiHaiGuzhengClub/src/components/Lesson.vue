@@ -6,7 +6,7 @@
         li
           router-link.bh-nav.link(to="/lesson") 琴课
         li
-          router-link.bh-nav.link(to="/intro2") 琴师
+          router-link.bh-nav.link(to="/tutor") 琴师
     .bh-lesson-right
       p 琴社常年开设古琴研习课程，包括普及大课、小组课、一对一等三种授课方式。在教学中贯彻以心取韵、心韵合一的理念，系统教授古琴演奏技巧，同时涉及琴学理论及历史，全面提高学员对传统文化的理解与鉴赏能力。
       img(src="../assets/img/bh-lesson-pic.png")
