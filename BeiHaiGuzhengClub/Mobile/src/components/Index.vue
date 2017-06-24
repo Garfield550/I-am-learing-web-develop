@@ -12,7 +12,7 @@
       v-card-row
         v-card-title 最新活动
       hr
-      v-card-row(v-for="event in events")
+      v-card-row(v-for="event in events" :key="event.title")
         .bh-event-column
           .bh-image-case
             img(:src="event.img")
