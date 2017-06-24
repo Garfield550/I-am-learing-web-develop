@@ -30,7 +30,7 @@
         fixed: false,
         items: [
           { to: '/', icon: '', title: '首页' },
-          { to: '/', icon: '', title: '琴社介绍' },
+          { to: '/intro', icon: '', title: '琴社介绍' },
           { to: '/', icon: '', title: '古琴研习' },
           { to: '/', icon: '', title: '古琴欣赏' },
           { to: '/', icon: '', title: '琴社活动' },
