@@ -34,7 +34,7 @@
           { to: '/', icon: '', title: '古琴研习' },
           { to: '/purchase', icon: '', title: '古琴欣赏' },
           { to: '/event', icon: '', title: '琴社活动' },
-          { to: '/', icon: '', title: '联系我们' },
+          { to: '/contact', icon: '', title: '联系我们' },
         ],
         miniVariant: false,
         title: '北海琴社',
