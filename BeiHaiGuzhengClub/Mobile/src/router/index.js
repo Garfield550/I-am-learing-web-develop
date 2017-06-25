@@ -4,6 +4,8 @@ import bhIndex from '@/components/Index';
 import bhIntro from '@/components/Intro';
 import bhPurchase from '@/components/Purchase';
 import bhEvent from '@/components/Event';
+import bhContact from '@/components/Contact';
+
 
 Vue.use(Router);
 
@@ -29,6 +31,11 @@ export default new Router({
       path: '/event',
       name: 'Event',
       component: bhEvent,
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: bhContact,
     },
   ],
 });
