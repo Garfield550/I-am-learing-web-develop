@@ -32,8 +32,8 @@
           { to: '/', icon: '', title: '首页' },
           { to: '/intro', icon: '', title: '琴社介绍' },
           { to: '/', icon: '', title: '古琴研习' },
-          { to: '/', icon: '', title: '古琴欣赏' },
-          { to: '/', icon: '', title: '琴社活动' },
+          { to: '/purchase', icon: '', title: '古琴欣赏' },
+          { to: '/event', icon: '', title: '琴社活动' },
           { to: '/', icon: '', title: '联系我们' },
         ],
         miniVariant: false,
@@ -45,6 +45,9 @@
 
 <style lang="stylus">
   @import './stylus/main'
+
+  main
+    background-color #efeff4
 
   .bh-app-title
     color #FFFFFF !important
